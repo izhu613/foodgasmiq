@@ -10,24 +10,24 @@ h1{font-size: 130%;} h2{font-size: 120%;} h3{font-size: 110%;} h4{font-size: 100
 .wrap { }
 .center { text-align: center; }
 .inner { width: 1200px; margin: 0 auto; position: relative; }
-.single .inner { min-width: 1000px; max-width: 1600px; width: auto;}
 
-.header { color: #fff; }
-.header h1 { position: absolute; top: 64px; left: 20px; }
-.header .logo { width: 199px; height: 23px; display: block; background: url(../img/logo.png) no-repeat 0 0; text-indent: -10000px; }
-.header .sign { padding: 9px 0 0; width: 100%; overflow: hidden; }
-.header .sign li { line-height: 40px; text-transform: uppercase; float: right; padding: 0 30px 0 10px; }
-.header .nav { padding-left: 300px; border: solid 1px #ccc; border-width: 1px 0; }
-.header .nav li { line-height: 49px; padding: 0 105px 0 0; text-transform: uppercase; display: inline-block;  }
+.header { color: #fff; padding:0 0 20px;}
+.header-line { background: #D63030; overflow: hidden;}
+.header h1 { float: left; padding: 8px 20px 0 20px;}
+.header .logo { width: 80px; height: 38px; display: block; background: url(../img/logo.png) no-repeat 0 0; background-size: 80px 38px; text-indent: -10000px; }
+.header .sign { float: right; overflow: hidden; }
+.header .sign li { line-height: 49px; text-transform: uppercase; float: right; padding: 0 30px 0 10px; }
+.header .nav { float: left; padding-left: 40px; }
+.header .nav li { line-height: 49px; padding: 0 25px 0 0; text-transform: uppercase; display: inline-block;  }
 .header .sign li a,
-.header .nav li a { color: #999; font-size: 14px; text-decoration: none; }
+.header .nav li a { color: #fff; font-size: 14px; text-decoration: none; }
 .header .sign li a:hover,
-.header .nav li a:hover { color: #cc0000; }
+.header .nav li a:hover { text-decoration: underline; }
 
 .content { font-size: 16px; line-height: 24px; padding: 0;  }
 
 ul.dishes { width: 100%; overflow: hidden; }
-ul.dishes>li { height: 400px; width: 400px; float: left; overflow: hidden; position: relative; }
+ul.dishes>li { height: 399px; width: 399px; margin: 0 1px 1px 0; float: left; overflow: hidden; position: relative; }
 ul.dishes>li img { height: 100%; width: auto; }
 ul.dishes>li div.hover { display: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(255,255,255,0.8); }
 ul.dishes>li:hover div.hover { display: block; }
@@ -76,15 +76,37 @@ ul.dishes .social a.pt:hover { background-position: 50% -452px; }
 .dish-social .fa-facebook-square:hover { color: #23407e; }
 .dish-social .fa-twitter-square { color: #3399cc;}
 .dish-social .fa-twitter-square:hover { color: #1f739d;}
-.dish-social .fa-pinterest-square { color: #c70c0c;} 
-.dish-social .fa-pinterest-square:hover { color: #a40e0e;} 
+.dish-social .fa-pinterest-square { color: #c70c0c;}
+.dish-social .fa-pinterest-square:hover { color: #a40e0e;}
 
 .rest { padding: 0 40px 40px; position: relative; }
 .rest-info { color: #828181; font-family: 'Lato', sans-serif; position: fixed; left: 50%; width: 360px; margin: 0 0 0 210px; padding: 40px 0 0;}
 .rest-images-cont { margin-right: 380px; padding: 40px 0 0; }
 .rest-images { text-align: center; overflow: hidden; }
-.rest-images li { width: 240px; margin: 0 1px 1px 0; overflow: hidden; float: left; }
-.rest-images img { height: 240px; }
+.rest-images>li { width: 240px; height: 240px; margin: 0 1px 1px 0; overflow: hidden; float: left; position: relative}
+.rest-images>li img { height: 100%; width: auto; }
+.rest-images>li div.hover { display: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(255,255,255,0.8); }
+.rest-images>li:hover div.hover { display: block; }
+.rest-images>li { font-family: 'Lato', sans-serif; text-align: center; text-transform: uppercase; }
+.rest-images>li h4 { color: #cc0000; font-size: 20px; font-weight: 400; padding: 10px 0; }
+.rest-images ul { width: 200px; margin: 0 auto; }
+.rest-images ul li { line-height: 30px; border-top: solid 1px #000; }
+.rest-images ul li:first-child { line-height: 20px; text-align: left; border-top: none; padding: 10px 0 10px; }
+.rest-images span.price { color: #000; font-size: 16px; font-weight: 300;  }
+.rest-images a.resto { color: #000; font-size: 10px; text-transform: none; text-decoration: none;  bottom: 5px; left: 8px; position: absolute; display: block; padding: 0 0 5px 18px; background: url(../img/map-icon-small.png) no-repeat 0 2px; }
+.rest-images a.resto:hover { color: #f30; background-position: 0 -32px; }
+.rest-images a.purchase { color: #fff; font-size: 10px; text-decoration: none; padding: 0 15px; float: right; line-height: 20px; background: #c00; }
+.rest-images a.purchase:hover { background: #b00; }
+.rest-images a.like { line-height: 50px; color: #000; text-decoration: none; padding-left: 40px; display: inline-block; background: url(../img/icons.png) no-repeat -10px 4px; }
+.rest-images a.like:hover { color: #cc0000; background-position: -10px -56px;}
+.rest-images .social {  }
+.rest-images .social a { display: inline-block; line-height: 33px; width: 35px; height: 35px; margin: 10px 5px; background: url(../img/icons.png) no-repeat 50% 0; }
+.rest-images .social a.fb { background-position: 50% -115px; }
+.rest-images .social a.fb:hover { background-position: 50% -177px; }
+.rest-images .social a.tw { background-position: 50% -242px; }
+.rest-images .social a.tw:hover { background-position: 50% -305px; }
+.rest-images .social a.pt { background-position: 50% -386px; }
+.rest-images .social a.pt:hover { background-position: 50% -452px; }
 .rest-info h2 { font-size: 25px; font-weight: 300; line-height: 41px; margin: -9px 0 20px; }
 .rest-info p { color: #999; font-size: 16px; line-height: 22px;}
 .rest-info .address { color: #c00; padding: 10px 0 30px;}
@@ -96,7 +118,7 @@ ul.dishes .social a.pt:hover { background-position: 50% -452px; }
 
 .footer { font-size: 12px; text-align: center; padding: 20px 0 80px; }
 .footer-line { background: #000; position: relative; }
-.footer-line .logo { position: absolute; top: 16px; left: 20px; width: 199px; height: 23px; display: block; background: url(../img/logo_btm.png) no-repeat 0 0; text-indent: -10000px; }
+.footer-line .logo { position: absolute; top: 4px; left: 20px; width: 91px; height: 43px; display: block; background: url(../img/logo_btm.png) no-repeat 0 0; background-size: 91px 43px; text-indent: -10000px; }
 .footer .nav { text-align: right; }
 .footer .nav li { line-height: 50px; display: inline; padding: 0 30px 0 10px;}
 .footer .nav li a { color: #fff; font-size: 12px; text-transform: uppercase; text-decoration: none; }
