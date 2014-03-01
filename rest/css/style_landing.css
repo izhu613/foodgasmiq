@@ -1,0 +1,49 @@
+﻿body { padding: 0; margin: 0; color: #343434; font-family: "Helvetica Neue", Helvetica; background: #fff; }
+a { 	color: #369; outline: none; text-decoration: underline; }
+a:hover { text-decoration: none; }
+img{ border: 0; vertical-align: middle; }
+input { outline: none; vertical-align: middle; }
+h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,fieldset { border: 0; margin: 0; padding: 0; list-style-type: none; }
+h1, h2, h3, h4, h5, h6 { color: #000; font-weight: 700; text-decoration: none; }
+h1{font-size: 130%;} h2{font-size: 120%;} h3{font-size: 110%;} h4{font-size: 100%;} h5{font-size: 90%;} h6{font-size: 80%;}
+
+html, body { height: 100%;}
+body { background: url(../img/bg_landing.jpg) no-repeat center; background-size: cover; }
+.wrap { }
+.center { text-align: center; }
+.inner { width: 1200px; margin: 0 auto; position: relative; }
+
+.header, .header-bg { position: fixed; top:0; left:0; width:100%; height: 50px;}
+.header-bg { background: #c00; opacity:0.75;}
+.header { color: #fff; padding:0;}
+.header-line { overflow: hidden;}
+.header h1 { float: left; padding: 8px 20px 0 20px;}
+.header .logo { width: 80px; height: 38px; display: block; background: url(../img/logo.png) no-repeat 0 0; background-size: 80px 38px; text-indent: -10000px; }
+.header .sign { float: right; overflow: hidden; }
+.header .sign li { line-height: 49px; text-transform: uppercase; float: right; padding: 0 30px 0 10px; }
+.header .nav { float: left; padding-left: 40px; }
+.header .nav li { line-height: 49px; padding: 0 25px 0 0; text-transform: uppercase; display: inline-block;  }
+.header .sign li a,
+.header .nav li a { color: #fff; font-size: 14px; text-decoration: none; }
+.header .sign li a:hover,
+.header .nav li a:hover { text-decoration: underline; }
+
+.dialog, .dialog-bg { position: fixed; top:25%; left:0; width:100%; height: 165px;}
+.dialog-bg { background: #fff; opacity: 0.2;}
+.dialog { color: #fff; padding:0; text-align: center;}
+.dialog h2 { width:500px; margin: 20px auto 10px; text-transform:uppercase; text-shadow: 2px 2px 5px #333; color: #FFF; font-size: 25px ; line-height: 150%;}
+.dialog .options { }
+.dialog .option { display: inline-block; color: #fff; font-size: 14px; text-decoration: none; padding: 0 15px; margin:0 10px; min-width:150px; line-height: 36px; background: #c00; }
+.dialog .option:hover { background: #b00; }
+
+
+.footer { background: #000; position: fixed; bottom:0; left:0; width:100%; height: 100px; font-size: 12px; text-align: center; }
+.footer-line {  position: relative; }
+.footer-line .logo { position: absolute; top: 4px; left: 20px; width: 91px; height: 43px; display: block; background: url(../img/logo_btm.png) no-repeat 0 0; background-size: 91px 43px; text-indent: -10000px; }
+.footer .nav { text-align: right; }
+.footer .nav li { line-height: 50px; display: inline; padding: 0 30px 0 10px;}
+.footer .nav li a { color: #fff; font-size: 12px; text-transform: uppercase; text-decoration: none; }
+.footer .nav li a:hover,
+.footer .nav li a.active { color: #f30; }
+.footer .copy { padding: 20px 0; }
+
