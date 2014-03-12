@@ -29,7 +29,7 @@ h1{font-size: 130%;} h2{font-size: 120%;} h3{font-size: 110%;} h4{font-size: 100
 ul.dishes { width: 100%; overflow: hidden; }
 ul.dishes>li { height: 399px; width: 399px; margin: 0 1px 1px 0; float: left; overflow: hidden; position: relative; }
 ul.dishes>li img { height: 100%; width: auto; }
-ul.dishes>li div.hover { display: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(255,255,255,0.8); }
+ul.dishes>li div.hover { display: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(255,255,255,0.9); }
 ul.dishes>li:hover div.hover { display: block; }
 ul.dishes>li { font-family: 'Lato', sans-serif; text-align: center; text-transform: uppercase; }
 ul.dishes>li h4 { color: #cc0000; font-size: 30px; font-weight: 400; padding: 20px 0 20px; }
